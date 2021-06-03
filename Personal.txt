@@ -1,0 +1,194 @@
+-- CREATE TABLE Personal.Registration(
+--     ID INT NOT NULL,
+--     First_Name VARCHAR(20) NOT NULL,
+--     Last_Name VARCHAR(20) NOT NULL,
+--     Country VARCHAR (20) NULL,
+--     Address VARCHAR (50) NULL,
+--     Phone_Number VARCHAR(20) NULL,
+--     Email VARCHAR(50) NOT NULL,
+--     DOB DATE NOT NULL,
+--     UserName VARCHAR(15) NOT NULL,
+--     Password VARCHAR(20) NOT NULL,
+
+-- )
+
+-- CREATE TABLE Personal.Reg_Picture(
+--     ID INT NOT NULL,
+--     Profile_Picture VARBINARY(MAX)  NULL,
+-- )
+
+
+-- CREATE TABLE Personal.Profile(
+--     ID INT NOT NULL,
+--     Profile_Picture INT NUll,
+--     Registration_ID NOT NULL
+--     UserName VARCHAR(15) NOT NULL,
+--     Bio text NULL,
+--     Phone_Number VARCHAR(20) NULL,
+--     Email VARCHAR(50) NOT NULL,
+--     Followers INT NULL,
+--     Following INT NULL,
+--     Verified VARCHAR(10) NULL,
+--     Suspended VARCHAR(10) NULL, 
+--     Blocked VARCHAR(10) NULL,
+--     Posted_Media INT NULL,
+--     Story_Media INT NULL,
+--     Date_Of_Registration DATETIME NULL
+    
+-- )
+
+
+-- CREATE TABLE Personal.Users(
+--     ID INT NOT NULL,
+--     Profile_ID INT NOT NULL,
+--     UserName VARCHAR(15) NOT NULL,
+--     Password VARCHAR(20) NOT NULL
+-- )
+-- CREATE TABLE Personal.ImagesPost_Media(
+--     ID INT  NULL, --(Post)
+--     Profile_ID INT  NULL,
+--     Images VARBINARY(MAX) NOT NULL,
+--      )
+
+
+-- CREATE TABLE Personal.ImagesPost(
+--     ID INT NOT NULL,
+--     Amount_Of_Likes INT NULL,
+--     Amount_OF_Comments INT NULL,
+--     Amount_OF_Dislikes INT NULL,
+--     Caption text NULL,
+--     Date_Of_Post DATETIME NOT NULL,
+--     Date_Deleted DATETIME NULL
+-- )
+
+-- CREATE TABLE Personal.ImagesPost_Activities(
+-- ID INT NOT NULL,
+-- Liked_By INT NOT NULL,
+-- Comments text NOT NULL,
+-- Commented_By int NOT NULL,
+-- Disliked_By int NOT NULL,
+-- )
+
+
+-- CREATE TABLE Personal.VideosPost_Media(
+--     ID INT  NULL,
+--     Profile_ID INT NOT NULL,
+--     Videos VARBINARY(MAX)  NULL
+-- )
+
+
+-- CREATE TABLE Personal.VideosPost(
+--     ID INT NOT NULL,
+--     Amount_Of_Likes INT NULL,
+--     Amount_OF_Comments INT NULL,
+--     Amount_OF_Dislikes INT NULL,
+--     Caption text NULL,
+--     Date_Of_Post DATETIME NOT NULL,
+--     Date_Deleted DATETIME NULL
+-- )
+
+-- CREATE TABLE Personal.VideosPost_Activities(
+-- ID INT NOT NULL,
+-- Liked_By INT NOT NULL,
+-- Comments text NOT NULL,
+-- Commented_By int NOT NULL,
+-- Disliked_By int NOT NULL,
+-- )
+
+
+
+-- CREATE TABLE Personal.StoryImages(
+--     ID INT  NULL,
+--     Profile_ID INT  NULL,
+--     Images VARBINARY(MAX) NOT NULL,
+--     Caption text  NULL
+
+-- )
+
+
+
+-- CREATE TABLE Personal.ImagesStory_Activities(
+-- ID INT NOT NULL,
+-- Replys text NOT NULL,
+-- Replied_By int NOT NULL,
+-- )
+
+
+-- CREATE TABLE Personal.StoryVideos_Media(
+--     ID INT NULL,
+--     Profile_ID INT  NULL,
+--   Videos VARBINARY(MAX) NOT NULL,    
+-- Caption text  NULL
+
+--  )
+
+
+
+-- CREATE TABLE Personal.VideosStory_Activites(
+-- ID INT NOT NULL,
+-- Replys text NOT NULL,
+-- Replied_By int NOT NULL,
+-- )
+
+
+
+-- CREATE TABLE Personal.Storytext_Media(
+--     ID INT NOT NULL,
+--     Profile_ID INT NOT NULL,
+--     Text text NOT NULL,
+--     Replys INT NULL,
+--     Date_of_post datetime NOT NULL,
+--     Date_Deleted datetime NOT NULL,
+-- )
+   
+-- CREATE TABLE Personal.Storytext(
+--     ID INT NOT NULL,
+--     Reply text NOT NULL,
+--     Replied_By int NOT NULL,
+-- )
+
+-- CREATE TABLE Personal.VerifiedAcct(
+--     ID INT NOT NULL,
+--     Date_Of_Verification DATETIME NOT NULL
+-- )
+
+-- CREATE TABLE Personal.SuspendedAcct(
+-- ID INT NOT NULL,
+-- Reason_For_Suspension text NOT NULL, 
+-- Range_Of_Suspension INT NOT NULL,
+-- Date_Suspended DATETIME NOT NULL,
+-- EndDate_Of_Suspension DATETIME NULL
+-- )
+
+-- CREATE Table Personal.BlockedAcct(
+--     ID INT NOT NULL,
+--     Reason_Of_Blocked text NOT NULL,
+--     Date_Blocked DATETIME
+-- )
+
+-- CREATE TABLE Personal.Groups(
+--     ID INT NOT NULL,
+--     Profile_Picture INT,
+--     Group_Owner INT NOT NULL, 
+--     Group_Name VARCHAR(30) NOT NULL,
+--     Followers INT NULL,
+--     Following INT NULL
+-- )
+
+-- CREATE TABLE Personal.Group_Picture(
+--     ID INT NOT NULL,
+--    Group_ProfilePicture VARBINARY(MAX) NOT NULL
+-- )
+
+
+-- CREATE TABLE Personal.Following(
+--     UserName VARCHAR(20),
+--     User_ID INT,
+--     Mutual INT
+-- )
+
+-- CREATE Table Personal.Followers(
+--     UserName VARCHAR(20),
+--     User_ID INT,
+--     Mutual INT
+-- )
